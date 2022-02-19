@@ -3,7 +3,7 @@
   <v-app>
     <v-app-bar
       fixed
-      height="64px"
+      height="72px"
       color="indigo"
       dark
       elevate-on-scroll
@@ -34,7 +34,9 @@
           hide-default-footer
         >
           <template v-slot:header>
-            <v-row class="flex flex-row justify-space-between ma-2">
+            <v-row
+              class="flex flex-row justify-space-between align-center ma-2"
+            >
               <v-col
                 cols="12"
                 md="2"
@@ -157,7 +159,9 @@
             </v-row>
           </template>
           <template v-slot:loading>
-            <div class="text-center text-h4">Loading Nobel Prizes List....</div>
+            <div class="text-center text-h4">
+              Loading Nobel Prize Winners List....
+            </div>
           </template>
         </v-data-iterator>
       </v-conatiner>
