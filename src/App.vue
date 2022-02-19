@@ -210,7 +210,7 @@ export default {
     getDataFromAPI() {
       this.loading = true;
       axios
-        .get("http://api.nobelprize.org/v1/prize.json")
+        .get("https://api.nobelprize.org/v1/prize.json")
         .then((response) => {
           this.list = response.data.prizes;
         })
